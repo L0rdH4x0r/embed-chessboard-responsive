@@ -1010,11 +1010,6 @@ function isHidden(el) {
   var style = window.getComputedStyle(el);
   return (style.display === 'none');
 }
-function moveNode(sourceNode, targetNode) {
-  while (sourceNode.childNodes.length > 0) {
-    targetNode.appendChild(sourceNode.childNodes[0]);
-  }
-}
 var originalMarginGameText = document.getElementById("GameText").style["margin-left"];
 function responsiveFix() {
   var respNode = document.getElementsByClassName('responsiveSwitch')[0];
